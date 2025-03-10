@@ -1,0 +1,12 @@
+.cyber-punk__button {
+  border: 1px solid transparent;
+  padding: 10px 40px;
+  font-size: 30px;
+  font-family: inherit;
+  color: var(--y-selected-text);
+  cursor: pointer;
+  background: rgb(18,101,117);
+  background: linear-gradient(90deg, rgba(18,101,117,0.6657256652661064) 21%, rgba(10,10,101,0.9374343487394958) 49%, rgba(172,32,172,0.7413559173669468) 87%, rgba(34,139,219,0.7413559173669468) 95%);
+}
+
+

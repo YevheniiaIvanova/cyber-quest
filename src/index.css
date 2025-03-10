@@ -1,0 +1,81 @@
+:root {
+  --bg-color: #272b23;
+  --g-selected-text:#14fe17;
+  --g-non-selected-text: #107c12;
+  --b-selected-text:#14cffe;
+  --b-non-selected-text:#1789b6;
+  --w-selected-text:#ffffff;
+  --w-non-selected-text:#ff00c8;
+
+  --y-selected-text:#d714fe;
+  --y-non-selected-text:#00e1ff;
+}
+
+
+body {
+  margin: 0;
+  /*display: flex;*/
+  /*place-items: center;*/
+  /*min-width: 320px;*/
+  /*min-height: 100vh;*/
+
+  font-family: 'Teko', sans-serif;
+  /*background-color: var(--bg-color);*/
+  /*color:var(--y-non-selected-text);*/
+  /*overflow: hidden;*/
+}
+
+
+h2 {
+  font-size: 60px;
+  line-height: 1.1;
+  letter-spacing: 3px;
+}
+
+р {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+
+/* animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Ефект мерехтіння кнопки */
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Скануюча лінія */
+@keyframes scanline {
+  0% { top: -10%; }
+  100% { top: 110%; }
+}
+
+/* Анімація друку */
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
