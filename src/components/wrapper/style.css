@@ -60,7 +60,7 @@
     position: relative;
 
     width: 800px;
-    height: 400px;
+    min-height: 420px;
 
     border-left: 3px solid  var(--y-selected-text);
     border-right: 3px solid var(--y-selected-text);

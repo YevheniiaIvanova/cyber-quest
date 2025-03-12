@@ -37,6 +37,10 @@ h2 {
   letter-spacing: 1px;
 }
 
+.d-none {
+  display: none;
+}
+
 
 /* animations */
 @keyframes fadeIn {
@@ -79,3 +83,4 @@ h2 {
 @keyframes blink {
   50% { border-color: transparent; }
 }
+

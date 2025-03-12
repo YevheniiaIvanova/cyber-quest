@@ -1,0 +1,6 @@
+.qr-code-game {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

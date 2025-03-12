@@ -1,0 +1,19 @@
+.last-step__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  background: url("src/assets/fixer.gif") no-repeat center center;
+  background-size: contain;
+}
+
+.last-step__wrapper::after{
+  content: '';
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
