@@ -26,17 +26,10 @@
   width: 850px;
 }
 
+p.type {
+  line-height: 1;
+}
 
-
-/*@keyframes flicker {*/
-/*  0% { opacity: 0.2; }*/
-/*  50% { opacity: 1; }*/
-/*  100% { opacity: 0.2; }*/
-/*}*/
-
-/*.connecting {*/
-/*  animation: flicker 1s infinite;*/
-/*}*/
 
 
 
