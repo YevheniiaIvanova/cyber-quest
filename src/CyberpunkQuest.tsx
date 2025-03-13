@@ -1,6 +1,6 @@
 import './CyberpunkQuest.css';
 import WelcomePage from './pages/WelcomePage/welcome.tsx';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Step1 } from './pages/Step1/step1.tsx';
 import { Step2 } from './pages/Step2/step2.tsx';
 import { LastStep } from './pages/LastStep/laststep.tsx';
@@ -13,6 +13,14 @@ import { SendCode } from './pages/Step7/SendCode.tsx';
 
 function CyberpunkQuest() {
   const [step, setStep] = useState(0);
+  const audioRef = useRef(new Audio('/main.mp3'));
+
+  useEffect(() => {
+    if (step === 1 && !audioRef.current.onplaying) {
+      audioRef.current.loop = true;
+      audioRef.current.play();
+    }
+  }, [step]);
 
   return (
     <>

@@ -14,7 +14,9 @@ export function SendCode({ onClick }: { onClick: () => void }) {
       setIsCorrect(true);
       onClick();
     } else {
-      alert('Неправильний код! Спробуй еще раз.');
+      alert(
+        'Неправильний код! Спробуй еще раз. P.S. Якщо буде дуже важко, викоростай dev tools' + ' ;)'
+      );
     }
   };
 
