@@ -2,7 +2,7 @@ import { ReactNode, useEffect, useRef } from 'react';
 import './style.css';
 import { Timer } from '../timer/timer.tsx';
 
-export function Wrapper({ children }: { children: ReactNode }) {
+export function Wrapper({ children, className }: { children: ReactNode; className?: string }) {
   const audioRef = useRef(new Audio('/main.mp3'));
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export function Wrapper({ children }: { children: ReactNode }) {
 
   return (
     <div className="bg">
-      <div className="wrapper fade-in">
+      <div className={`wrapper ${className}`}>
         <Timer />
         <div className="content">{children}</div>
       </div>

@@ -34,7 +34,7 @@ export function Timer() {
   return (
     <div className="countdown">
       {timeLeft.expired ? (
-        <p> 🎁 Подарунок вже відправлено! </p>
+        <p className="heading"> 🎁 Подарунок вже відправлено! </p>
       ) : (
         <p className="heading">
           ⏳ {timeLeft.days} days {timeLeft.hours} hours {timeLeft.minutes} minutes{' '}

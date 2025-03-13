@@ -32,15 +32,33 @@ h2 {
   letter-spacing: 3px;
 }
 
-р {
-  font-size: 28px;
-  letter-spacing: 1px;
+
+.text--pink {
+  color: var(--y-selected-text);
 }
 
 .d-none {
   display: none;
 }
 
+.riddle_text {
+  margin-top: 15px;
+  padding: 10px;
+
+  background-color: rgba(232, 221, 221, 0.2);
+  border-radius: 5px;
+
+  text-align: center;
+  color: var(--g-selected-text);
+}
+
+.small_text {
+  font-size: 16px;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
 
 /* animations */
 @keyframes fadeIn {
@@ -84,3 +102,15 @@ h2 {
   50% { border-color: transparent; }
 }
 
+.fade-out {
+  animation: fadeOut 10s ease-in-out;
+}
+
+
+.fade-in {
+  animation: fadeIn 5s ease-in-out;
+}
+
+.fade-in__basic {
+  animation: fadeIn 2.5s ease-in-out;
+}

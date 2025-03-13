@@ -9,16 +9,17 @@ export function GlitchTextStep({ onClick }: { onClick: () => void }) {
 
   return (
     <Wrapper>
-      <div className="">
-        <div className={`${turnOn && 'dark'} content`}>
+      <div className="fade-in__basic">
+        <div className={`${turnOn ? 'dark' : ''} content`}>
           <div className="header">
             <p>Код зламаний, але світло допоможе тобі побачити вірно</p>
             <button
+              className="button_icon"
               onClick={() => {
                 setTurnOn(!turnOn);
               }}
             >
-              Light
+              <img className={`${turnOn ? 'turn-on' : 'turn-off'}`} />
             </button>
           </div>
 

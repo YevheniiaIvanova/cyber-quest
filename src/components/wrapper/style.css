@@ -13,6 +13,14 @@
   overflow: hidden;
 }
 
+.wrapper .content:first-child {
+  padding-top: 30px;
+}
+
+.wrapper .content:nth-child(1) {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .wrapper::after{
   content: '';
   position: absolute;
@@ -46,11 +54,6 @@
 }
 
 
-/* fadeIn */
-.fade-in {
-  animation: fadeIn 5s ease-in-out;
-}
-
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -70,4 +73,19 @@
     box-shadow: inset 200px 21px 194px 20px #12c0953b;
 }
 
+.wrapper p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    line-height: 1.7;
 
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px  1px 0 #000,
+    1px  1px 0 #000;
+
+  text-align: justify;
+}

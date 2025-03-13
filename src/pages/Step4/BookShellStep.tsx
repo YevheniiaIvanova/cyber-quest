@@ -4,14 +4,17 @@ import { Button } from '../../components/button/button.tsx';
 export function BookShellStep({ onClick }: { onClick: () => void }) {
   return (
     <Wrapper>
-      <div className="">
+      <div className="fade-in__basic">
         <div className="content">
           <p>
             Наш агент розшифрував інше послання для знаходження частини коду:
-            <span>
-              Загадка: "Старі архіви містять відповіді, але вони не завжди у відкритому доступі.
-              Шукай там, де ховають знання. Пролий світло і відповідь явиться тобі"
-            </span>
+            <div className="riddle_text">
+              "Старі архіви містять відповіді, <br /> але вони не завжди у відкритому доступі.{' '}
+              <br />
+              Шукай там, де ховають знання. <br />
+              Але будь уважним: навіть коли знайдешь потрібне, істина залишиться прихованою… доки ти
+              не проллєш на неї світло."
+            </div>
           </p>
           <Button onClick={onClick} className="cyber-punk__button">
             Next

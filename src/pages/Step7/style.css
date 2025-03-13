@@ -1,0 +1,23 @@
+p.text-content {
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  align-self: center;
+  padding: 20px;
+
+  font-size: 18px;
+  color: #0ff;
+
+  background: rgba(18, 18, 61, 0.8);
+  border: 2px solid cyan;
+  border-radius: 10px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}

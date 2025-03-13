@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 
-export default function QRCode() {
+export default function QRCode({
+  isSolved,
+  setIsSolved,
+}: {
+  isSolved: boolean;
+  setIsSolved: (isSolved: boolean) => void;
+}) {
   const [pieces, setPieces] = useState<string[]>([]);
-  const [isSolved, setIsSolved] = useState<boolean>(false);
   const [dragging, setDragging] = useState<number | null>(null);
 
   useEffect(() => {
@@ -56,6 +61,7 @@ export default function QRCode() {
           gridTemplateColumns: 'repeat(4, 100px)',
           gridTemplateRows: 'repeat(4, 100px)',
           gap: '5px',
+          marginBottom: '20px',
         }}
       >
         {pieces.length === 0 && <p>Зображення ще не завантажено...</p>}
@@ -71,6 +77,7 @@ export default function QRCode() {
               backgroundPosition: piece.backgroundPosition,
               cursor: 'move',
               border: '2px solid #d714fe',
+              backgroundColor: '#fff',
             }}
             draggable
             onDragStart={() => setDragging(index)}

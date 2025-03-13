@@ -1,3 +1,11 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 150px;
+}
+
 .image-wrapper {
   width: 180px;
   height: 200px;
@@ -9,4 +17,26 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+.connecting {
+  font-size: 50px;
+}
+
+.text_container {
+  width: 850px;
+}
+
+
+
+/*@keyframes flicker {*/
+/*  0% { opacity: 0.2; }*/
+/*  50% { opacity: 1; }*/
+/*  100% { opacity: 0.2; }*/
+/*}*/
+
+/*.connecting {*/
+/*  animation: flicker 1s infinite;*/
+/*}*/
+
+
 
