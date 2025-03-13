@@ -1,0 +1,58 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.container {
+  font-family: Consolas, monospace;
+  color: #33ff33;
+  background: black;
+  padding: 20px;
+  width: 900px;
+}
+
+.typing-container p {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(30, end) forwards;
+  border-right: none; /* Забираємо курсор */
+  font-size: 18px;
+}
+
+/* Додаємо курсор тільки до останнього елемента */
+.typing-container p:last-child {
+  border-right: 2px solid #33ff33; /* Курсор */
+  animation: typing 2s steps(30, end) forwards, blink 0.8s steps(2, start) infinite 10s;
+}
+
+/* Керування затримкою друку */
+.typing-container p:nth-child(1) {
+  animation-delay: 0s;
+}
+.typing-container p:nth-child(2) {
+  animation-delay: 2s;
+}
+.typing-container p:nth-child(3) {
+  animation-delay: 4s;
+}
+.typing-container p:nth-child(4) {
+  animation-delay: 6s;
+}
+.typing-container p:nth-child(5) {
+  animation-delay: 8s;
+}
+.typing-container p:nth-child(6) {
+  animation-delay: 10s;
+}

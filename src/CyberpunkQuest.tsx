@@ -16,7 +16,7 @@ function CyberpunkQuest() {
 
   return (
     <>
-      {step === 9 && <WelcomePage onClick={() => setStep(1)} />}
+      {step === 0 && <WelcomePage onClick={() => setStep(1)} />}
       {step === 1 && <Step1 onClick={() => setStep(2)} />}
       {step === 2 && <Step2 onClick={() => setStep(3)} />}
       {step === 3 && <BunnyCodeStep onClick={() => setStep(4)} />}
@@ -25,7 +25,7 @@ function CyberpunkQuest() {
       {step === 6 && <BookShellStep onClick={() => setStep(7)} />}
       {step === 7 && <SendCode onClick={() => setStep(8)} />}
       {step === 8 && <LastStep onClick={() => setStep(9)} />}
-      {step === 0 && <FinalPage />}
+      {step === 9 && <FinalPage />}
     </>
   );
 }

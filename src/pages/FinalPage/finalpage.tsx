@@ -1,9 +1,9 @@
 import phone from '../../assets/phone.gif';
 import './style.css';
-import '../../typing-styles.scss';
 import ConnectingText from './ConnectingText.tsx';
 import { useEffect, useState } from 'react';
 import { GreetingMessage } from './greetingMessage.tsx';
+import './typing.css';
 
 export function FinalPage() {
   const [showGreeting, setShowGreeting] = useState(false); // Стейт для привітання
@@ -19,7 +19,7 @@ export function FinalPage() {
     const timer = setTimeout(() => {
       setShowMessage(false);
       setShowGreeting(true);
-    }, 40000);
+    }, 28000);
 
     return () => {
       clearTimeout(connectingTimer);
@@ -35,19 +35,18 @@ export function FinalPage() {
           <div className="image-wrapper">
             <img src={phone} alt="phone" />
           </div>
-          <div className="text_container">
-            <p className="type">Привіт, мандрівнику.</p>
-            <p className="type">
-              Ми зламали систему, корпорації зазнали поразки, і тепер у цьому світі панує мир.
-            </p>
-            <p className="type">Дякую, що пройшов цей шлях зі мною. Ти – справжній союзник.</p>
-            <p className="type">
-              Але в мене залишилося ще одне завдання: доставка чистої системи та останього
-              посилання.
-            </p>
-            <p className="type"> Почекай трохи – послання незабаром з'явиться.</p>
-            <p className="type">А доставка чистої системи вже в дорозі. Очікуй її о 18:00. </p>
-            <p className="test">Test</p>
+
+          <div className="container">
+            <div className="typing-container">
+              <p>Привіт, мандрівнику.</p>
+              <p>
+                Ми зламали систему, корпорації зазнали поразки, і тепер у цьому світі панує мир.
+              </p>
+              <p>Дякую, що пройшов цей шлях зі мною. Ти – справжній союзник.</p>
+              <p>У мене залишилась остання місія, але про неї ти дізнаєшся трохи пізніше.</p>
+              <p>Я надішлю тобі доставку десь о 18:00.</p>
+              <p>А поки що тримай останнє послання...</p>
+            </div>
           </div>
         </div>
       )}
